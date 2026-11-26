@@ -1,0 +1,18 @@
+{
+  "client_id": "https://meetdino.co/oauth/client.json",
+  "client_name": "dinocode",
+  "application_type": "native",
+  "redirect_uris": [
+    "http://127.0.0.1/mcp/oauth/callback",
+    "http://localhost/mcp/oauth/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none",
+  "client_uri": "https://meetdino.co"
+}
