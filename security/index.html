@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Policy · dinocode</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/"><img src="/logo.svg" alt="">dinocode</a>
+      <nav>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+      </nav>
+    </header>
+    <main class="doc">
+      <h1>Security Policy</h1>
+      <p class="date">Effective November 26, 2026</p>
+      
+      <ol class="toc">
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#reporting">Reporting a security issue</a></li>
+<li><a href="#scope">What&#x27;s in scope</a></li>
+<li><a href="#safe-harbor">Good-faith research</a></li>
+<li><a href="#practices">How dinocode protects you</a></li>
+<li><a href="#responsibilities">Your part</a></li>
+<li><a href="#changes">Changes to this policy</a></li>
+<li><a href="#contact">Contact us</a></li>
+      </ol>
+<h2 id="introduction"><span class="n">01</span>Introduction</h2>
+<p>This policy explains how to report security issues in dinocode, the meetdino.co website and dinocode's sign-in identity at auth.meetdino.co, and how we handle reports.</p>
+<p>dinocode runs on your computer and connects to model providers and integrations you choose. We secure the software we write and the small amount of infrastructure we run; we don't control the security of your devices, accounts, networks or third-party services.</p>
+<h2 id="reporting"><span class="n">02</span>Reporting a security issue</h2>
+<p>Email <a href="mailto:security@meetdino.co">security@meetdino.co</a>. Please don't disclose the issue publicly until we've had a reasonable chance to fix it. When you can, include:</p>
+<ul><li>a description of the issue and its impact</li><li>the affected version, component or URL</li><li>steps to reproduce, or a minimal proof of concept</li><li>relevant logs or output, with secrets removed</li><li>how to contact you, and whether you'd like public credit</li></ul>
+<p>We aim to acknowledge reports within three business days, keep you updated on progress, and coordinate disclosure once a fix is available.</p>
+<h2 id="scope"><span class="n">03</span>What&#x27;s in scope</h2>
+<ul>
+<li>The dinocode software: its local service, terminal UI, CLI, SDKs, permission and trust checks, and handling of credentials and sign-in.</li>
+<li>meetdino.co and auth.meetdino.co.</li>
+</ul>
+<p>Vulnerabilities in third-party model providers, MCP servers or other services should go to those vendors.</p>
+<h2 id="safe-harbor"><span class="n">04</span>Good-faith research</h2>
+<p>We won't pursue legal action against good-faith research that follows this policy: test only against your own installation and accounts, avoid privacy violations and disruption, don't access or change other people's data, and give us reasonable time to respond before disclosing.</p>
+<h2 id="practices"><span class="n">05</span>How dinocode protects you</h2>
+<ul>
+<li>Commands, credentials and loosened permissions that come from project configuration wait until you trust that project.</li>
+<li>The agent asks before actions your permission rules don't allow.</li>
+<li>Sign-in tokens and API keys stay on your computer and are never sent to us.</li>
+<li>Integration sign-in uses standard OAuth with PKCE, and the sign-in callback only listens on your own machine.</li>
+</ul>
+<h2 id="responsibilities"><span class="n">06</span>Your part</h2>
+<p>Keep your computer and accounts secure, review permissions before granting them, be careful when trusting projects you didn't write, and keep dinocode up to date.</p>
+<h2 id="changes"><span class="n">07</span>Changes to this policy</h2>
+<p>We may update this policy; the date above shows the latest version.</p>
+<h2 id="contact"><span class="n">08</span>Contact us</h2>
+<p>Security reports: <a href="mailto:security@meetdino.co">security@meetdino.co</a></p>
+    </main>
+    <footer>
+      <div>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+        <a href="mailto:support@meetdino.co">Contact</a>
+      </div>
+      <div>MIT licensed · meetdino</div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · dinocode</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/"><img src="/logo.svg" alt="">dinocode</a>
+      <nav>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+      </nav>
+    </header>
+    <main class="doc">
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective November 26, 2026</p>
+      
+      <ol class="toc">
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#collect">Information we collect</a></li>
+<li><a href="#local">Data stored on your computer</a></li>
+<li><a href="#sharing">Data sent to services you choose</a></li>
+<li><a href="#automatic">Requests dinocode makes on its own</a></li>
+<li><a href="#signin">Signing in to integrations</a></li>
+<li><a href="#google">Google user data</a></li>
+<li><a href="#choices">Your choices</a></li>
+<li><a href="#website">This website</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#changes">Changes to this policy</a></li>
+<li><a href="#contact">Contact us</a></li>
+      </ol>
+<h2 id="introduction"><span class="n">01</span>Introduction</h2>
+<p>dinocode is an open-source coding agent that runs on your own computer. This policy explains what data dinocode handles, where it goes, and what meetdino ("we", "us") can and can't see. It covers the dinocode software and this website, meetdino.co.</p>
+<p>The short version: <strong>dinocode runs locally, sends nothing to us, and sends your data only to the services you choose.</strong></p>
+<h2 id="collect"><span class="n">02</span>Information we collect</h2>
+<p><strong>We don't collect information from the dinocode software.</strong> It sends no analytics, telemetry, crash reports or usage data to us, and we don't operate servers that receive your code, prompts, conversations or credentials.</p>
+<p>We receive information only when you contact us, for example by emailing support@meetdino.co or reporting a security issue. In that case we receive what you send: your email address and the contents of your message.</p>
+<h2 id="local"><span class="n">03</span>Data stored on your computer</h2>
+<p>dinocode keeps the following in its local data directory (by default <code>~/.local/share/dinocode</code>) and its config files:</p>
+<ul><li>sessions, messages, task history and plans</li><li>settings and configuration</li><li>credentials you add, such as model provider API keys and sign-in tokens for integrations</li></ul>
+<p>This data stays on your computer unless a feature you use sends it somewhere (see below). It's protected by your operating system's account permissions, so anyone with access to your user account can read it. You can delete it at any time by removing the data directory.</p>
+<h2 id="sharing"><span class="n">04</span>Data sent to services you choose</h2>
+<ul>
+<li><strong>AI model providers.</strong> When you chat or run a task, dinocode sends your prompts, plus the code, files and tool results the task needs, to the model provider you configured, such as Anthropic or OpenAI. That provider's terms and privacy policy apply.</li>
+<li><strong>Integrations (MCP servers).</strong> When you connect an integration such as Slack, GitHub or Linear, dinocode sends it the requests needed to use its tools and receives what those tools return.</li>
+<li><strong>Web tools.</strong> When the agent fetches a web page or runs a web search, the request goes to that website or search service.</li>
+<li><strong>Optional trace export.</strong> If you configure an OpenTelemetry (OTLP) endpoint, dinocode sends traces of your sessions to that endpoint. It's off by default.</li>
+</ul>
+<h2 id="automatic"><span class="n">05</span>Requests dinocode makes on its own</h2>
+<ul>
+<li><strong>Model catalog.</strong> dinocode downloads the public list of available models from models.dev. The request contains no personal data or content from your work.</li>
+<li><strong>Sign-in identity.</strong> When you sign in to some integrations, the integration's server may fetch dinocode's public client description from auth.meetdino.co. It contains nothing about you.</li>
+</ul>
+<h2 id="signin"><span class="n">06</span>Signing in to integrations</h2>
+<p>Sign-in happens directly between your browser, the provider (for example Google or Slack) and dinocode on your computer. <strong>We never receive your passwords, tokens or the data you access.</strong> If you use dinocode's registered app for a provider, its consent screen may show dinocode's name and our contact details, but your data still goes only to your computer and the services you use.</p>
+<h2 id="google"><span class="n">07</span>Google user data</h2>
+<p>dinocode's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Specifically:</p>
+<ul><li>Google user data is used only to provide the features you ask dinocode to perform, on your computer.</li>
+<li>It is not sold, not used for advertising, and not transferred to others except as needed to provide those features (such as to the AI model provider you choose), to comply with law, or with your consent.</li>
+<li>We don't receive or store your Google user data, and no person at meetdino reads it.</li></ul>
+<h2 id="choices"><span class="n">08</span>Your choices</h2>
+<p>You control what dinocode sends: which model provider you use, which integrations you connect, and whether trace export is on. You can disconnect integrations, sign out, remove credentials, or delete the local data directory at any time. To ask about information you sent us by email, contact support@meetdino.co.</p>
+<h2 id="website"><span class="n">09</span>This website</h2>
+<p>meetdino.co is a static site hosted on GitHub Pages. It sets no cookies and runs no analytics. GitHub may log visitors' IP addresses for security and operations; see GitHub's privacy statement.</p>
+<h2 id="children"><span class="n">10</span>Children</h2>
+<p>dinocode is not directed at children under 13, and we don't knowingly collect information from them.</p>
+<h2 id="changes"><span class="n">11</span>Changes to this policy</h2>
+<p>If we change this policy, we'll update the date above and post the new version on this page.</p>
+<h2 id="contact"><span class="n">12</span>Contact us</h2>
+<p>Questions about privacy: <a href="mailto:support@meetdino.co">support@meetdino.co</a></p>
+    </main>
+    <footer>
+      <div>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+        <a href="mailto:support@meetdino.co">Contact</a>
+      </div>
+      <div>MIT licensed · meetdino</div>
+    </footer>
+  </div>
+</body>
+</html>
